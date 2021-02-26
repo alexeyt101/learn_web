@@ -11,7 +11,7 @@ from webapp.news.parsers.utils import get_html, save_news
 if platform.system() == 'Windows':
     locale.setlocale(locale.LC_ALL, 'russian')
 else:
-    locale.setlocale(locale.LC_TIME, 'ru_RU')  
+    locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
 
 
 def parse_habr_date(date_str):
